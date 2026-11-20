@@ -1,0 +1,4 @@
+node_modules/
+dist/
+assets/main.js
+.claude/

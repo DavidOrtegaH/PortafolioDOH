@@ -1,0 +1,13 @@
+{
+  "name": "portafolio-david-ortega-hoyas",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc && node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

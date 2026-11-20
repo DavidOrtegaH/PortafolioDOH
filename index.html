@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Ortega Hoyas · Desarrollador web Full Stack</title>
+  <meta name="description" content="Portafolio de David Ortega Hoyas, desarrollador web Full Stack de Parla (Madrid) que busca su primer puesto de desarrollo. Proyectos con demo, trayectoria y contacto.">
+  <meta name="author" content="David Ortega Hoyas">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#141519">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="David Ortega Hoyas · Desarrollador web Full Stack">
+  <meta property="og:description" content="Desarrollador web Full Stack de Parla (Madrid). Proyectos, trayectoria y contacto.">
+  <meta property="og:image" content="https://davidortegah.github.io/PortafolioDOH/assets/david.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141519'/%3E%3Ctext x='9' y='47' font-family='Arial,sans-serif' font-weight='900' font-size='40' fill='%23f2eee3'%3ED%3C/text%3E%3Ccircle cx='50' cy='43' r='6' fill='%23c8f135'/%3E%3C/svg%3E">
+  <link rel="canonical" href="https://davidortegah.github.io/PortafolioDOH/"><link rel="preload" as="image" href="assets/david.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="DOH. Ir al inicio">DOH<span class="brand-dot" aria-hidden="true">.</span></a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary btn--small header-cv" href="assets/cv-david-ortega.pdf" type="application/pdf">CV<span class="sr-only"> de David Ortega Hoyas</span> <span class="btn-meta">PDF</span></a>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- Portada -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span>Desarrollador web Full Stack · Parla (Madrid)</p>
+          <h1 class="hero-name" id="hero-title">
+            <span class="hero-line hero-line--ivory">David</span>
+            <span class="hero-line hero-line--lime">Ortega Hoyas</span>
+          </h1>
+          <p class="hero-lead">
+            Me gusta convertir tareas de todos los días en herramientas web. En mis prácticas automaticé la gestión de ayudas de Educación. Ahora busco <strong>mi primer puesto como desarrollador Full Stack</strong>.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#contacto">Contactar</a>
+            <a class="btn btn--text" download="CV-David-Ortega-Hoyas.pdf" href="assets/cv-david-ortega.pdf" type="application/pdf">Descargar CV <span class="btn-meta">PDF</span></a>
+          </div>
+          <dl class="hero-facts">
+            <div>
+              <dt>Formación</dt>
+              <dd>Grado Superior DAW, 2022–2025</dd>
+            </div>
+            <div>
+              <dt>Experiencia</dt>
+              <dd>Prácticas en el Ayto. de Humanes de Madrid</dd>
+            </div>
+            <div>
+              <dt>Idiomas</dt>
+              <dd>Español nativo · Inglés intermedio</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="portrait">
+          <span class="geo geo-circle" aria-hidden="true"></span>
+          <span class="geo geo-square" aria-hidden="true"></span>
+          <span class="geo geo-dots" aria-hidden="true"></span>
+          <div class="portrait-frame">
+            <img src="assets/david.webp" alt="Retrato de David Ortega Hoyas" width="535" height="767" fetchpriority="high" decoding="async">
+          </div>
+          <figcaption class="portrait-caption">
+            <span>Parla, Madrid</span>
+            <span>Full Stack</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-index">Proyectos</p>
+          <h2 id="proyectos-title">Trabajo que puedes probar</h2>
+          <p class="section-intro">Cada proyecto tiene una demo publicada y su repositorio en GitHub.</p>
+        </header>
+
+        <article class="feature" id="estateforge" aria-labelledby="estateforge-title" data-reveal>
+          <div class="media media--feature" data-label="EstateForge">
+            <img src="assets/estateforge.webp" alt="Captura de la aplicación EstateForge" width="1300" height="840" loading="lazy" decoding="async">
+          </div>
+          <div class="feature-body">
+            <p class="badge">Caso principal</p>
+            <h3 class="feature-title" id="estateforge-title">EstateForge</h3>
+            <p class="feature-text">
+              Una ficha de inmueble reúne fotos, anuncios y material para publicar. Construí la interfaz con React y la API con Fastify. Migré de SQLite a PostgreSQL para controlar las ediciones simultáneas y conservar la precisión de los precios.
+            </p>
+            <ul class="tags" aria-label="Tecnologías de EstateForge"><li>React</li><li>TypeScript</li><li>Fastify</li><li>PostgreSQL</li></ul>
+            <div class="feature-actions">
+              <a class="btn btn--primary" href="https://estateforge-blush.vercel.app/" target="_blank" rel="noopener noreferrer">Probar demo<span class="sr-only"> de EstateForge (se abre en una pestaña nueva)</span></a>
+              <a class="btn btn--ghost" href="https://github.com/DavidOrtegaH/estateforge" target="_blank" rel="noopener noreferrer">Ver código<span class="sr-only"> de EstateForge en GitHub (se abre en una pestaña nueva)</span></a>
+            </div>
+          </div>
+        </article>
+
+        <ul class="projects" role="list">
+          <li class="project" id="golden-ratio-tester" data-reveal>
+            <article aria-labelledby="grt-title">
+              <div class="media" data-label="Golden Ratio Tester">
+                <img src="assets/golden-ratio-tester.webp" alt="Captura de Golden Ratio Tester" width="1300" height="840" loading="lazy" decoding="async">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title" id="grt-title">Golden Ratio Tester</h3>
+                <p>Busca posibles coincidencias con la proporción áurea en una imagen. El detector de Python se ejecuta en el navegador con WebAssembly y permite inspeccionar las guías sobre la foto.</p>
+                <ul class="tags" aria-label="Tecnologías">
+                  <li>Python</li>
+                  <li>WebAssembly</li>
+                  <li>Navegador</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://davidortegah.github.io/golden-ratio-tester/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> de Golden Ratio Tester (se abre en una pestaña nueva)</span></a>
+                  <a href="https://github.com/DavidOrtegaH/golden-ratio-tester" target="_blank" rel="noopener noreferrer">Código<span class="sr-only"> de Golden Ratio Tester en GitHub (se abre en una pestaña nueva)</span></a>
+                </p>
+              </div>
+            </article>
+          </li>
+
+          <li class="project" id="restaurante-plaza-pinto" data-reveal>
+            <article aria-labelledby="rpp-title">
+              <div class="media" data-label="Restaurante Plaza Pinto">
+                <img src="assets/restaurante-plaza-pinto.webp" alt="Captura del sitio web de Restaurante Plaza Pinto" width="1300" height="840" loading="lazy" decoding="async">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title" id="rpp-title">Restaurante Plaza Pinto</h3>
+                <p>La carta del Bar Plaza se puede consultar desde el móvil, junto con el horario, el contacto y cómo llegar. Desarrollé el sitio con Astro y lo publiqué en Netlify.</p>
+                <ul class="tags" aria-label="Tecnologías">
+                  <li>Astro</li>
+                  <li>Netlify</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://restaurante-plaza-pinto.netlify.app/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> de Restaurante Plaza Pinto (se abre en una pestaña nueva)</span></a>
+                  <a href="https://github.com/DavidOrtegaH/restaurante-plaza-pinto" target="_blank" rel="noopener noreferrer">Código<span class="sr-only"> de Restaurante Plaza Pinto en GitHub (se abre en una pestaña nueva)</span></a>
+                </p>
+              </div>
+            </article>
+          </li>
+
+          <li class="project" id="clock-simulator" data-reveal>
+            <article aria-labelledby="clock-title">
+              <div class="media" data-label="Clock Simulator">
+                <img src="assets/clocksimulator.webp" alt="Captura de Clock Simulator con un reloj manipulable" width="1300" height="840" loading="lazy" decoding="async">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title" id="clock-title">Clock Simulator</h3>
+                <p>Arrastra las agujas y el reloj escribe la hora como se diría en inglés. Implementé el estado de la esfera y los controles de teclado con Svelte y TypeScript.</p>
+                <ul class="tags" aria-label="Características">
+                  <li>Svelte 5</li>
+                  <li>TypeScript</li>
+                  <li>Interacción táctil</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://davidortegah.github.io/ClockSimulator/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> de Clock Simulator (se abre en una pestaña nueva)</span></a>
+                  <a href="https://github.com/DavidOrtegaH/ClockSimulator" target="_blank" rel="noopener noreferrer">Código<span class="sr-only"> de Clock Simulator en GitHub (se abre en una pestaña nueva)</span></a>
+                </p>
+              </div>
+            </article>
+          </li>
+
+          <li class="project" id="tuxfall" data-reveal>
+            <article aria-labelledby="tux-title">
+              <div class="media" data-label="TuxFall">
+                <img src="assets/tuxfall.webp" alt="Una partida de TuxFall en el navegador" width="900" height="710" loading="lazy" decoding="async">
+              </div>
+              <div class="project-body">
+                <h3 class="project-title" id="tux-title">TuxFall</h3>
+                <p>Juego de caída libre en tres carriles. Separé las reglas del dibujo en Canvas para probar las colisiones y ajusté la dificultad con simulaciones de partidas.</p>
+                <ul class="tags" aria-label="Tecnologías">
+                  <li>Canvas</li>
+                  <li>Juego</li>
+                </ul>
+                <p class="project-links">
+                  <a href="https://davidortegah.github.io/TuxFall/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> de TuxFall (se abre en una pestaña nueva)</span></a>
+                  <a href="https://github.com/DavidOrtegaH/TuxFall" target="_blank" rel="noopener noreferrer">Código<span class="sr-only"> de TuxFall en GitHub (se abre en una pestaña nueva)</span></a>
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Trayectoria -->
+    <section class="section" id="trayectoria" aria-labelledby="trayectoria-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-index">Trayectoria</p>
+          <h2 id="trayectoria-title">Experiencia, formación y proyectos académicos</h2>
+        </header>
+
+        <div class="track">
+          <section class="track-group" aria-labelledby="exp-title" data-reveal>
+            <h3 class="track-label" id="exp-title"><span>Experiencia</span></h3>
+            <article class="entry entry--lime" id="practicas" aria-labelledby="practicas-title">
+              <p class="entry-date"><time datetime="2024-10">Octubre</time> – <time datetime="2024-12">diciembre de 2024</time></p>
+              <h4 class="entry-title" id="practicas-title">Prácticas · Ayuntamiento de Humanes de Madrid</h4>
+              <div class="entry-split">
+                <div>
+                  <p>
+                    Desarrollé una base de datos en Microsoft Access con automatizaciones en VBA para la gestión de las ayudas de Educación.
+                  </p>
+                  <p>También resolví incidencias de software y hardware, instalé puestos de trabajo y mantuve el inventario de equipos en Excel.</p>
+                </div>
+                <p class="stat">
+                  <span class="stat-value">≈50<span class="stat-unit">%</span></span>
+                  <span class="stat-label">menos tiempo de gestión de las ayudas de Educación</span>
+                </p>
+              </div>
+              <ul class="tags" aria-label="Herramientas">
+                <li>Access</li>
+                <li>VBA</li>
+                <li>Bases de datos</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="track-group" aria-labelledby="form-title" data-reveal>
+            <h3 class="track-label" id="form-title"><span>Formación</span></h3>
+            <article class="entry" id="daw" aria-labelledby="daw-title">
+              <p class="entry-date"><time datetime="2022">2022</time> – <time datetime="2025">2025</time></p>
+              <h4 class="entry-title" id="daw-title">Grado Superior en Desarrollo de Aplicaciones Web (DAW)</h4>
+              <p>IES Tierno Galván, Parla. Trabajé con Java, PHP, JavaScript, TypeScript y React, bases de datos SQL y NoSQL, y contenedores Docker.</p>
+            </article>
+          </section>
+
+          <section class="track-group" aria-labelledby="acad-title" id="academicos" data-reveal>
+            <h3 class="track-label" id="acad-title"><span>Proyectos académicos</span></h3>
+            <div class="entry-grid">
+              <article class="entry entry--violet" id="supermercado" aria-labelledby="super-title">
+                <p class="entry-kind">En grupo</p>
+                <h4 class="entry-title" id="super-title">Supermercado con Laravel</h4>
+                <p>Aplicación de supermercado desarrollada en equipo con el framework Laravel.</p>
+                <ul class="tags" aria-label="Tecnologías">
+                  <li>PHP</li>
+                  <li>Laravel</li>
+                  <li>Trabajo en equipo</li>
+                </ul>
+              </article>
+              <article class="entry entry--violet" id="animacion" aria-labelledby="anim-title">
+                <p class="entry-kind">Individual</p>
+                <h4 class="entry-title" id="anim-title">Sistema de animación</h4>
+                <p>Proyecto individual en el que diseñé y desarrollé un sistema de animación.</p>
+                <ul class="tags" aria-label="Ámbito">
+                  <li>Animación</li>
+                  <li>Trabajo individual</li>
+                </ul>
+              </article>
+              <article class="entry entry--violet" id="email-marketing" aria-labelledby="mail-title">
+                <p class="entry-kind">Prueba de concepto</p>
+                <h4 class="entry-title" id="mail-title">Email marketing en Ubuntu Server</h4>
+                <p>Para mi proyecto de fin de grado monté, desde la terminal de Ubuntu Server, una prueba de concepto para captar contactos y gestionar campañas y embudos de email marketing. Configuré SMTP y SSL y probé el sistema desde Ubuntu Desktop.</p>
+                <ul class="tags" aria-label="Tecnologías">
+                  <li>Ubuntu Server</li>
+                  <li>Sistemas</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section" id="habilidades" aria-labelledby="habilidades-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-index">Habilidades</p>
+          <h2 id="habilidades-title">Lo que sé hacer, y dónde lo he hecho</h2>
+          <p class="section-intro">Cada capacidad enlaza con el trabajo en el que la he aplicado.</p>
+        </header>
+
+        <div class="skills-grid">
+          <section class="skill-col" aria-labelledby="sk-front" data-reveal>
+            <h3 id="sk-front">Frontend</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">HTML semántico, CSS y TypeScript</span>
+                <span class="skill-proof">Aplicado en <a href="#inicio">este portafolio</a>, sin frameworks</span>
+              </li>
+              <li>
+                <span class="skill-name">Canvas en el navegador</span>
+                <span class="skill-proof">Aplicado en <a href="#tuxfall">TuxFall</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Interfaces interactivas y didácticas</span>
+                <span class="skill-proof">Aplicado en <a href="#clock-simulator">Clock Simulator</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Animación e interacción</span>
+                <span class="skill-proof">Aplicado en el <a href="#animacion">sistema de animación individual</a></span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-col" aria-labelledby="sk-back" data-reveal>
+            <h3 id="sk-back">Backend</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">API con Fastify y PostgreSQL</span>
+                <span class="skill-proof">Interfaz en React y persistencia con Prisma en <a href="#estateforge">EstateForge</a></span>
+              </li>
+              <li>
+                <span class="skill-name">PHP y Laravel</span>
+                <span class="skill-proof">Aplicado en el <a href="#supermercado">supermercado en grupo</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Bases de datos y automatización con VBA</span>
+                <span class="skill-proof">Aplicado en las <a href="#practicas">prácticas en Humanes de Madrid</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Python con WebAssembly</span>
+                <span class="skill-proof">Aplicado en <a href="#golden-ratio-tester">Golden Ratio Tester</a></span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="skill-col" aria-labelledby="sk-sys" data-reveal>
+            <h3 id="sk-sys">Sistemas</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name">Linux con Ubuntu Server</span>
+                <span class="skill-proof">Aplicado en la <a href="#email-marketing">prueba de email marketing</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Despliegue en GitHub Pages, Netlify y Vercel</span>
+                <span class="skill-proof">Aplicado en las <a href="#proyectos">demos publicadas</a></span>
+              </li>
+              <li>
+                <span class="skill-name">Control de versiones con Git</span>
+                <span class="skill-proof">Repositorios en <a href="https://github.com/DavidOrtegaH" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (se abre en una pestaña nueva)</span></a></span>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <dl class="langs" data-reveal>
+          <div>
+            <dt>Español</dt>
+            <dd>Nativo</dd>
+          </div>
+          <div>
+            <dt>Inglés</dt>
+            <dd>Intermedio</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section contact" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="section-index">Contacto</p>
+          <h2 class="contact-title" id="contacto-title">¿Buscas un perfil junior? <span>Hablemos.</span></h2>
+        </header>
+
+        <div class="contact-body" data-reveal>
+          <p class="contact-mail">
+            <a href="mailto:davidortegahoyas@gmail.com">davidortegahoyas@gmail.com</a>
+          </p>
+          <div class="contact-copy">
+            <button class="btn btn--ghost btn--small copy-btn" type="button" data-copy="davidortegahoyas@gmail.com" hidden>Copiar correo</button>
+            <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+          </div>
+
+          <ul class="contact-links" role="list">
+            <li>
+              <a class="contact-card" href="https://www.linkedin.com/in/david-ortega-hoyas-6b6b78365/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">david-ortega-hoyas</span>
+                <span class="sr-only">(se abre en una pestaña nueva)</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-card" href="https://github.com/DavidOrtegaH" target="_blank" rel="noopener noreferrer">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">DavidOrtegaH</span>
+                <span class="sr-only">(se abre en una pestaña nueva)</span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-card" href="assets/cv-david-ortega.pdf" type="application/pdf">
+                <span class="contact-card-label">Currículum</span>
+                <span class="contact-card-value">CV en PDF</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> David Ortega Hoyas. Todos los derechos reservados.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+</body>
+</html>
